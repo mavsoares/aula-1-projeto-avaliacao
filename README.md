@@ -55,8 +55,8 @@ Acesse: http://localhost:8000/docs
 
 ## Exemplo de Uso
 
-```json
 POST /calcular
+```json
 {
   "alimentos": [
     {"nome": "arroz", "gramas": 150},
