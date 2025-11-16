@@ -31,7 +31,7 @@ def test_alimento_nao_encontrado():
         ]
     }
     response = client.post("/calcular", json=payload)
-    assert response.status_code == 400
+    assert response.status_code == 422
     assert (
         response.json()["detail"]
         == "Alimento 'batata' não encontrado na tabela de calorias"
