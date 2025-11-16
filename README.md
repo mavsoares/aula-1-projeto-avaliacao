@@ -1,21 +1,21 @@
 # Projeto de Avaliação referente à Aula 1 - MBA IA IBMEC
 
-O projeto consiste na elaboração de uma API de Lógica de Negócio, contendo os seguintes requisitos:
+Implementação de uma API de Lógica de Negócio, contendo os seguintes requisitos:
 - README.md
 - API (FastAPI)
 - Validação (Pydantic)
 - Testes (Pytest)
 - Governança (Git)
 
+### Regra de Negócio
+
+Calcula o total de calorias a partir da lista de alimentos informados.
+
 ### Grupo
 
 - Marcos Vinícius Soares
 - Modestino André Rodrigues Neto
 - Thiago Marques Silva
-
-## O que é o projeto
-
-Implementação de uma API que recebe informações de alimentos consumidos e retorna o total de calorias.
 
 ## Pré-requisitos
 
