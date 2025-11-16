@@ -61,7 +61,7 @@ POST /calcular
   "alimentos": [
     {"nome": "arroz", "gramas": 150},
     {"nome": "feijao", "gramas": 100},
-    {"nome": "frango", "gramas": 100},
+    {"nome": "frango", "gramas": 100}
   ]
 }
 ```
