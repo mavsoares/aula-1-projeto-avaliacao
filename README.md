@@ -15,7 +15,7 @@ O projeto consiste na elaboração de uma API de Lógica de Negócio, contendo o
 
 ## O que é o projeto
 
-Implementação da API que recebe informações de alimentos consumidos e retorna o total de calorias.
+Implementação de uma API que recebe informações de alimentos consumidos e retorna o total de calorias.
 
 ## Pré-requisitos
 
