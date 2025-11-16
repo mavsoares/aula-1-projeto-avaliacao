@@ -3,9 +3,11 @@ from src.api.main import app
 
 client = TestClient(app)
 
+
 def test_health_check():
     response = client.get("/")
     assert response.status_code == 200
+
 
 def test_calorias():
     payload = {
@@ -19,6 +21,7 @@ def test_calorias():
     assert response.status_code == 200
     assert response.json()["total_calorias"] == 450
 
+
 def test_alimento_nao_encontrado():
     payload = {
         "alimentos": [
@@ -29,4 +32,7 @@ def test_alimento_nao_encontrado():
     }
     response = client.post("/calcular", json=payload)
     assert response.status_code == 400
-    assert response.json()["detail"] == "Alimento 'batata' não encontrado na tabela de calorias"
+    assert (
+        response.json()["detail"]
+        == "Alimento 'batata' não encontrado na tabela de calorias"
+    )

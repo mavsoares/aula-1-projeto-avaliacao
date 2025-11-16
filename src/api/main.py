@@ -4,8 +4,7 @@ import logging
 from src.models.schemas import CaloriasResponse, CaloriasRequest
 
 logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s"
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
 )
 logger = logging.getLogger(__name__)
 
@@ -32,7 +31,7 @@ def calcular_frete(dados: CaloriasRequest):
         "maca": 0.52,
         "chocolate": 5.35,
         "queijo": 3.02,
-        "pao": 2.64
+        "pao": 2.64,
     }
 
     total_calorias = 0
@@ -42,7 +41,10 @@ def calcular_frete(dados: CaloriasRequest):
         gramas = alimento.gramas
 
         if nome not in calorias_alimentos_por_grama:
-            raise HTTPException(status_code=422, detail=f"Alimento '{nome}' não encontrado na tabela de calorias")
+            raise HTTPException(
+                status_code=422,
+                detail=f"Alimento '{nome}' não encontrado na tabela de calorias",
+            )
 
         total_calorias += (int)(calorias_alimentos_por_grama[nome] * gramas)
 
