@@ -48,7 +48,6 @@ pytest --version
 ## Como Executar
 
 ```bash
-pip install -r requirements.txt
 uvicorn src.api.main:app --reload
 ```
 
