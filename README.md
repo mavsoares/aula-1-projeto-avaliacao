@@ -33,12 +33,26 @@ git clone https://github.com/mavsoares/aula-1-projeto-avaliacao.git
 cd aula-1-projeto-avaliacao
 ```
 
-### 2. Instale as dependências
+### 2. Crie o ambiente virtual (recomendado)
+
+#### Linux/Mac
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+#### Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Instale as dependências
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Verifique a instalação
+### 4. Verifique a instalação
 ```bash
 python --version
 git --version
