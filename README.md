@@ -13,6 +13,7 @@ Calcula o total de calorias a partir da lista de alimentos informados.
 
 ### Grupo
 
+- Guilherme Silveira Rabelo
 - Marcos Vinícius Soares
 - Modestino André Rodrigues Neto
 - Thiago Marques Silva
